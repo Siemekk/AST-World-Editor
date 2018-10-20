@@ -15,11 +15,10 @@ void  PluginLoop ()
 	editor->Attach();
 
 
-	if(true)
-	{
-		screen->Line(SCREEN_MID - zpixelx(10), SCREEN_MID, SCREEN_MID + zpixelx(10), SCREEN_MID, zCOLOR(255, 255, 255, 255));
-		screen->Line(SCREEN_MID, SCREEN_MID - zpixely(10), SCREEN_MID, SCREEN_MID  + zpixely(10), zCOLOR(255, 255, 255, 255));
-	}		
+	// Draw crosshair 
+	screen->Line(SCREEN_MID - zpixelx(10), SCREEN_MID, SCREEN_MID + zpixelx(10), SCREEN_MID, zCOLOR(255, 255, 255, 255));
+	screen->Line(SCREEN_MID, SCREEN_MID - zpixely(10), SCREEN_MID, SCREEN_MID  + zpixely(10), zCOLOR(255, 255, 255, 255));
+	
 }
 
 void __fastcall _CallScriptInit(oCGame*);
