@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D907B76B-4CF6-48A5-9591-3AA7EAC8F041}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AST_Plugin_V100307_Snapshot</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>wemain</TargetName>
+    <OutDir>C:\Gothic II\System</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AST_PLUGIN_V100307_SNAPSHOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;AST_PLUGIN_V100307_SNAPSHOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CDirectVector.cpp" />
+    <ClCompile Include="CEditCamera.cpp" />
+    <ClCompile Include="CEditor.cpp" />
+    <ClCompile Include="CGizmo.cpp" />
+    <ClCompile Include="CVobList.cpp" />
+    <ClCompile Include="dllLoop.cpp" />
+    <ClCompile Include="dllMain.cpp" />
+    <ClCompile Include="dllRefApp.cpp" />
+    <ClCompile Include="OpenZen.cpp" />
+    <ClCompile Include="zobject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AST.h" />
+    <ClInclude Include="ASTAPI\CApplication.h" />
+    <ClInclude Include="ASTAPI\CCallback.h" />
+    <ClInclude Include="ASTAPI\CConfig.h" />
+    <ClInclude Include="ASTAPI\CConsoleExtender.h" />
+    <ClInclude Include="ASTAPI\CCursor.h" />
+    <ClInclude Include="ASTAPI\CDiagram.h" />
+    <ClInclude Include="ASTAPI\CDynamicBar.h" />
+    <ClInclude Include="ASTAPI\CHookInfo.h" />
+    <ClInclude Include="ASTAPI\CInvoke.h" />
+    <ClInclude Include="ASTAPI\CLightDetector.h" />
+    <ClInclude Include="ASTAPI\CLoadScreen.h" />
+    <ClInclude Include="ASTAPI\CMessage.h" />
+    <ClInclude Include="ASTAPI\CPlugin.h" />
+    <ClInclude Include="ASTAPI\CQuiver.h" />
+    <ClInclude Include="ASTAPI\CScabbard.h" />
+    <ClInclude Include="ASTAPI\CScreenShot.h" />
+    <ClInclude Include="ASTAPI\CSplash.h" />
+    <ClInclude Include="ASTAPI\CTimer.h" />
+    <ClInclude Include="ASTAPI\CTriggerFunc.h" />
+    <ClInclude Include="ASTAPI\CUntyped.h" />
+    <ClInclude Include="ASTAPI\CViewAction.h" />
+    <ClInclude Include="ASTAPI\CViewAni.h" />
+    <ClInclude Include="ASTAPI\extra\CArray.h" />
+    <ClInclude Include="ASTAPI\extra\CArrayBase.h" />
+    <ClInclude Include="ASTAPI\extra\CList.h" />
+    <ClInclude Include="ASTAPI\extra\CMemPool.h" />
+    <ClInclude Include="ASTAPI\extra\CMemPool32.h" />
+    <ClInclude Include="ASTAPI\extra\CMemPool64.h" />
+    <ClInclude Include="ASTAPI\extra\CString.h" />
+    <ClInclude Include="ASTAPI\extra\Extra.h" />
+    <ClInclude Include="AST_003.h" />
+    <ClInclude Include="CDirectVector.h" />
+    <ClInclude Include="CEditCamera.h" />
+    <ClInclude Include="CEditor.h" />
+    <ClInclude Include="CGizmo.h" />
+    <ClInclude Include="CVobList.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="wemain.h" />
+    <ClInclude Include="zobject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="G2_names" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

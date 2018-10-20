@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AST">
+      <UniqueIdentifier>{130f3050-22ef-489b-af8a-8d072d01e6cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AST\Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AST\Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{9bdaaa23-956e-4e6d-b1cf-267c3a1394d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Plugin main">
+      <UniqueIdentifier>{04c8264b-4c52-427a-a552-8eab72c6f534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI">
+      <UniqueIdentifier>{95bd6f28-7fa4-467e-9e25-86bf24751b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI\HookEngine">
+      <UniqueIdentifier>{956e10fb-b353-40c0-93ed-c2e7603882a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI\UI">
+      <UniqueIdentifier>{51c5031d-fa9b-45e1-bf31-26c763d8f141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI\RIG">
+      <UniqueIdentifier>{f588facd-93ed-43c5-a796-b7b4b4554ff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI\System">
+      <UniqueIdentifier>{faacc1c9-f710-4589-9117-630311db36e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\Tools">
+      <UniqueIdentifier>{f0ba2795-43b5-4704-8b8d-0959669a7e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI\Extra">
+      <UniqueIdentifier>{e52e9f6b-be3e-44d8-a2f6-9f040db24219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI\Extra\CArray">
+      <UniqueIdentifier>{39f1d30d-a7b3-48fa-82d1-3534173331a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI\Extra\CList">
+      <UniqueIdentifier>{dd1517fe-57df-44ae-82b8-5e9d26c83896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI\Extra\CMemPool">
+      <UniqueIdentifier>{8ee91ce0-a4af-4bfe-809b-bf37bceadec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Заголовочные файлы\ASTAPI\Extra\CString">
+      <UniqueIdentifier>{df0c979b-5df0-45f2-bd86-72f3491d2558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\World Editor">
+      <UniqueIdentifier>{dc6b2ec1-3c70-40f0-9d32-324b9664e795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\World Editor\OpenZe">
+      <UniqueIdentifier>{73329159-47c8-4543-8bf0-500552c1c785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\World Editor\CEditor">
+      <UniqueIdentifier>{ed459606-5b3a-42fa-a59c-d8635128d8c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\World Editor\CEditCamera">
+      <UniqueIdentifier>{782f57ec-53fa-45c6-9f41-be5ec2cf0708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\World Editor\CGizmo">
+      <UniqueIdentifier>{9a5a3cc6-4bfe-40c9-b042-3c15ba11a0a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\World Editor\CDirectVector">
+      <UniqueIdentifier>{dcc0c83c-fb44-4392-a6d4-839e5cad9983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\World Editor\CVobList">
+      <UniqueIdentifier>{f7b3ae7a-2673-4070-a95b-ecaeb8c2410d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllMain.cpp">
+      <Filter>Plugin\Plugin main</Filter>
+    </ClCompile>
+    <ClCompile Include="zobject.cpp">
+      <Filter>AST\Заголовочные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="dllRefApp.cpp">
+      <Filter>Plugin\Plugin main</Filter>
+    </ClCompile>
+    <ClCompile Include="dllLoop.cpp">
+      <Filter>Plugin\Plugin main</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenZen.cpp">
+      <Filter>Plugin\World Editor\OpenZe</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditor.cpp">
+      <Filter>Plugin\World Editor\CEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditCamera.cpp">
+      <Filter>Plugin\World Editor\CEditCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="CDirectVector.cpp">
+      <Filter>Plugin\World Editor\CDirectVector</Filter>
+    </ClCompile>
+    <ClCompile Include="CGizmo.cpp">
+      <Filter>Plugin\World Editor\CGizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="CVobList.cpp">
+      <Filter>Plugin\World Editor\CVobList</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AST_003.h">
+      <Filter>AST\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="AST.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CConsoleExtender.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CCallback.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\HookEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CInvoke.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\HookEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CHookInfo.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\HookEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CUntyped.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\HookEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CScreenShot.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CViewAni.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CViewAction.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CCursor.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CDynamicBar.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CQuiver.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\RIG</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CScabbard.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\RIG</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CLightDetector.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CDiagram.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CTimer.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CTriggerFunc.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CApplication.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CLoadScreen.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CMessage.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CSplash.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CPlugin.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>AST\Заголовочные файлы\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="zobject.h">
+      <Filter>AST\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\CConfig.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\extra\Extra.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\extra\CArray.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\Extra\CArray</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\extra\CArrayBase.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\Extra\CArray</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\extra\CList.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\Extra\CList</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\extra\CMemPool32.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\Extra\CMemPool</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\extra\CMemPool64.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\Extra\CMemPool</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\extra\CMemPool.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\Extra\CMemPool</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTAPI\extra\CString.h">
+      <Filter>AST\Заголовочные файлы\ASTAPI\Extra\CString</Filter>
+    </ClInclude>
+    <ClInclude Include="wemain.h">
+      <Filter>Plugin\World Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditor.h">
+      <Filter>Plugin\World Editor\CEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditCamera.h">
+      <Filter>Plugin\World Editor\CEditCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="CDirectVector.h">
+      <Filter>Plugin\World Editor\CDirectVector</Filter>
+    </ClInclude>
+    <ClInclude Include="CGizmo.h">
+      <Filter>Plugin\World Editor\CGizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="CVobList.h">
+      <Filter>Plugin\World Editor\CVobList</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="G2_names">
+      <Filter>AST</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
